@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header" >
+        <div class="contain">
+            <nav>
+                <!-- <img src="images/charan name.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer ......</p>
+                <h1>Hi, I'm <span>Charan Teja</span>   From <br>    Andhra Pradesh.</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------about--------------------->
+    <div id="about" >
+        <div class="container">
+            <!-- <img src="images/IMG_20250520_185535.jpg" class="charan"> -->
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/download.png" class="imag">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am R.Charan Teja and I am a Front End Developer.<br> This is about me and my collage is RGUKT ongole.
+                        This is about me.<br><br> In First section skills which I learned .<br> In Second section Internship where would I leran that skills.<br>
+                        In Third section Education it comes from schooling to B-tech.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Internships</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Developer</span><br>Designing the web interfaces.</li>
+                            <li><span>Java Developer</span><br>running at backend.</li>
+                            <li><span>SQL</span><br>Database purpose.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025-currently</span><br>front end development at codetech.</li>
+                            <li><span>2024</span><br>java development at internship studio.</li>
+                            <li><span>2024</span><br>sql at IBM.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2026</span><br>B-tech on IIIT ongole</li>
+                            <li><span>2019-2020</span><br>10 th class at zp.high school kothapeta.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  ----------------services------------------->
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    
+                    <h2>Web Design</h2>
+                    <p>this is about the web page.And we learn about this page .</p>
+                    <a href="#" class="learn">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>this is about the java.java is popularly known.and it is widely used now a days.</p>
+                    <a href="#" class="learn">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>this is about the sql.And this is for database purposes.</p>
+                    <a href="#" class="learn">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+      </div>
+      <!-- ---------------portfolio--------------->
+       <div id="portfolio">
+        <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/main.jpg" class="ima">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="images/music.webp" class="ima">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="images/dow.jpg" class="ima">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+        </div>
+        
+       </div>
+<!-------------------contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rachamallicharanteja@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7780379816</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Charan Teja main resume .pdf" download target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; published by <i class="fa-solid fa-heart"></i> Charan.</p>
+    </div>
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontents=document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
